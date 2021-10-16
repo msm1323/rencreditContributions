@@ -34,4 +34,8 @@ public class PageManager {
         return contributionsPage;
     }
 
+    public void quit(){
+        PAGE_MANAGER = null;
+    }
+
 }

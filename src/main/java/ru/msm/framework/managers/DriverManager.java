@@ -17,7 +17,7 @@ public class DriverManager {
 
     private WebDriver driver;
 
-    private final PropertiesManager PROPERTIES_MANAGER = PropertiesManager.getINSTANCE();
+    private PropertiesManager PROPERTIES_MANAGER = PropertiesManager.getINSTANCE();
 
 
     public static DriverManager getINSTANCE() {

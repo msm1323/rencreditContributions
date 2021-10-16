@@ -24,6 +24,8 @@ public class InitManager {
 
     public static void quitFramework() {
         DRIVER_MANAGER.quitDriver();
+        PROPERTIES_MANAGER.quit();
+        PageManager.getINSTANCE().quit();
     }
 
 }

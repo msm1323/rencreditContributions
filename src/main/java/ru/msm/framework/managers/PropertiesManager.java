@@ -1,6 +1,5 @@
 package ru.msm.framework.managers;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -37,7 +36,6 @@ public class PropertiesManager {
         }
     }
 
-
     /**
      * Метод заменяет значение содержащиеся в ключах переменной {@link #properties}
      * Заменяет на те значения, что передал пользователь через maven '-D{name.key}={value.key}'
@@ -59,6 +57,10 @@ public class PropertiesManager {
 
     public String getProperty(String key) {
         return properties.getProperty(key);
+    }
+
+    public void quit(){
+        PROPERTIES_MANAGER = null;
     }
 
 }
